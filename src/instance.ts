@@ -264,7 +264,7 @@ function setupBabel(loaderConfig: LoaderConfig): any {
 }
 
 function applyDefaults(compilerConfig: TsConfig, loaderConfig: LoaderConfig) {
-    compilerConfig.typingOptions.exclude = compilerConfig.typingOptions.exclude || [];
+    compilerConfig.typeAcquisition.exclude = compilerConfig.typeAcquisition.exclude || [];
     let initialFiles = compilerConfig.fileNames;
 
     _.defaults(compilerConfig.options, {
